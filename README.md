@@ -2,7 +2,6 @@
 
 馬のスピード、ジャンプ力、体力を表示するMODです。
 
-［horse info](https://cdn.discordapp.com/attachments/927804410745225247/1418633873780244582/image.png?ex=68d0cf80&is=68cf7e00&hm=d9cc6e508ad85bfa7da183c60fb2ef2f8b234196806e42bdf26afe8c78ca3f0c&)
 
 ## インストール方法
 ①Minecraft Java Edition ver 1.18.2が正常に動作するか確認してください。
