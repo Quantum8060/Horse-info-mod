@@ -3,6 +3,9 @@
 馬のスピード、ジャンプ力、体力を表示するMODです。
 
 
+![Test Image 1](image/image.png)
+
+
 ## インストール方法
 ①Minecraft Java Edition ver 1.18.2が正常に動作するか確認してください。
 
