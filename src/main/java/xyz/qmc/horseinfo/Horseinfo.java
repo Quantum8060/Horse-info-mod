@@ -5,24 +5,25 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.TextRenderer;
+import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.attribute.EntityAttributes;
-import net.minecraft.entity.passive.HorseBaseEntity;
+import net.minecraft.entity.passive.HorseEntity;
 
 
 public class Horseinfo implements ModInitializer   {
-	public static final String MOD_ID = "horseinfo";
+    public static final String MOD_ID = "horseinfo";
 
     @Override
     public void onInitialize() {
-        HudRenderCallback.EVENT.register(this::onHudRender);
+        HudRenderCallback.EVENT.register((context, tickDelta) -> onHudRender(context, tickDelta));
     }
 
-    private void onHudRender(MatrixStack matrices, float tickDelta) {
+    private void onHudRender(DrawContext context, float tickDelta) {
         MinecraftClient client = MinecraftClient.getInstance();
         if (client.player == null) return;
 
-        if (client.player.getVehicle() instanceof HorseBaseEntity horse) {
+        if (client.player.getVehicle() instanceof HorseEntity horse) {
             TextRenderer textRenderer = client.textRenderer;
 
             double health = horse.getHealth();
@@ -39,9 +40,9 @@ public class Horseinfo implements ModInitializer   {
 
             RenderSystem.enableBlend();
 
-            textRenderer.drawWithShadow(matrices, healthText, x, y, 0xFF5555);
-            textRenderer.drawWithShadow(matrices, jumpText, x, y + 10, 0xFFAA00);
-            textRenderer.drawWithShadow(matrices, speedText, x, y + 20, 0x55FFFF);
+            context.drawText(client.textRenderer, healthText, x, y, 0xFF5555, false);
+            context.drawText(client.textRenderer, jumpText, x, y + 10, 0xFFAA00, false);
+            context.drawText(client.textRenderer, speedText, x, y + 20, 0x55FFFF, false);
 
             RenderSystem.disableBlend();
         }

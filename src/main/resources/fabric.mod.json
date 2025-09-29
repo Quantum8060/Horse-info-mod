@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "horseinfo",
 	"version": "${version}",
-	"name": "horseinfo",
+	"name": "Horseinfo",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -24,7 +24,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.17.2",
-		"minecraft": "~1.18.2",
+		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
 	},
