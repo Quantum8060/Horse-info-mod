@@ -7,10 +7,10 @@
 
 
 ## インストール方法
-①Minecraft Java Edition ver 1.18.2が正常に動作するか確認してください。
+①Minecraft Java Edition ver 1.20.1が正常に動作するか確認してください。
 
 
-②Minecraft 1.18.2に対応するfabricをインストールしてください。
+②Minecraft 1.20.1に対応するfabricをインストールしてください。
 インストール方法は各自で調べてください。
 
 
