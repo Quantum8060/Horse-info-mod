@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "horseinfo",
+	"version": "${version}",
+	"name": "Horseinfo",
+	"description": "Displays horse stats on the HUD.",
+	"authors": [
+		"Quantum8060"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Quantum8060/Horse-info-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/horseinfo/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"xyz.qmc.horseinfo.Horseinfo"
+		],
+		"modmenu": [
+			"xyz.qmc.horseinfo.HorseinfoModMenu"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"modmenu": "*"
+	},
+	"suggests": {
+		"modmenu": "*",
+		"cloth-config2": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"Github Release": "https://github.com/Quantum8060/Horse-info-mod/releases",
+				"github": "https://github.com/Quantum8060/Horse-info-mod"
+			}
+		}
+	}
+}
