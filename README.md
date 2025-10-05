@@ -15,6 +15,8 @@
 
 
 ③他のMODと同じようにmodsフォルダにjarファイルを入れてください。
+
+
 ※前提MODはFabric API・ModMenu・Cloth Config APIです。
 
 
