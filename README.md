@@ -3,6 +3,11 @@
 馬のスピード、ジャンプ力、体力を表示するMODです。
 
 
+
+
+[Modrinth](https://modrinth.com/mod/horse-info)
+
+
 ![Test Image 1](image/image.png)
 
 
